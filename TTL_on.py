@@ -1,14 +1,5 @@
 from artiq.language import *
 
-from artiq.coredevice.ad9910 import PHASE_MODE_TRACKING
-
-import visa
-import VISAresourceExtentions
-import os.path
-import time
-import datetime
-import sys
-
 class UrukulSync(EnvExperiment):
     def build(self):
         self.setattr_device("core")
